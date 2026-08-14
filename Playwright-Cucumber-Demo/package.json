@@ -1,0 +1,11 @@
+{
+  "name": "playwright-cucumber-demo",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "...",
+    "@playwright/test": "..."
+  }
+}
