@@ -1,0 +1,56 @@
+const {chromium} = require('playwright');
+
+(async () => {
+    const browser = await chromium.launch({headless: false});
+    const context = await browser.newContext();
+    const page = await context.newPage();
+    await page.goto('https://www.saucedemo.com/');
+    console.log('Test3 executed successfully');
+    await browser.close();
+})();
+
+
+const{chromium}=require('playwright');
+
+(async()=>{
+	
+	const browser=await chromium.launch({headless:true});
+	const context=await browser.neContext();
+	const page= await context.newPage();
+	await page.goto("https://www.amazon.com");
+	browser.close();
+	
+	
+});
+
+
+
+async enterusername(username){
+
+    await this.username.fill(username);
+
+this.username = page.getByPlaceholder('Username');
+
+async enterUsername(username) {
+//  await this.username.fill(username);
+//}
+
+When I enter username "standard_user"
+
+when('I enter username{String}',async function(username){
+
+
+    await this.loginPage. enterusername(username);
+})
+
+When('I enter username {string}', async function (username) {
+
+    await this.loginPage.enterUsername(username);
+});
+
+And I enter password "secret_sauce"
+
+And('I enter password{String}',async function(password){
+
+await this.loginpage.password(password);
+});

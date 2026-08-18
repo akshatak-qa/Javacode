@@ -1,1 +1,84 @@
 java new code
+
+
+await page.locator("#country").selectoption("india");
+
+await page.locator('#country').selectOption('India');
+
+
+
+
+
+await page.locator("#countrydropdwon").click();\
+await page.getByText('india').click();
+
+await page.locator('#countryDropdown').click();
+await page.getByText('India').click();
+
+await page.locator("#terms").check();
+await page.locator("#terms").uncheck();
+
+List<String> list;
+Set<String> set;
+map<name "akshata">map;
+
+List<String> list;
+
+Set<String> set;
+
+Map<Integer, String> map;
+
+
+String parent = driver.getWindowHandle();
+
+for (String window : driver.getWindowHandles()) {
+    driver.switchTo().window(window);
+}
+
+
+
+
+String parent= driver.getWindowHandle();
+for(String window: driver.getWindowHandles(){
+driver.switchTo().window(window);
+}
+
+SELECT MAX(salary)FROM Employee WHERE salary < (SELECT MAX(salary) FROM Employee);
+
+
+select max(salary) from employee where salary< (select max(salary) from employee);
+
+Alert alert = driver.switchTo().alert();
+alert.accept();
+accept();
+dismiss();
+getText();
+sendKeys();
+
+Alert alert = driver.switchTo().alert();
+alert.accept();
+
+
+
+@BeforeSuite
+@BeforeClass
+@BeforeMethod
+@Test
+@AfterClass
+@AfterMethod
+@AfterSuite
+
+
+
+
+@BeforeSuite
+@BeforeClass run once before all test methods in class
+@BeforeMethod run befoe each test metho
+@Test
+@AfterMethod
+@AfterClass
+@AfterSuite
+
+
+
+select department, count(*) from employee group by department;
